@@ -1,4 +1,4 @@
-## initi-aws-deploy
+## init-aws-deploy
 
 Full‑stack monorepo for a rental listings platform.
 
@@ -138,7 +138,7 @@ Auth: Provide a valid JWT in the `Authorization` header. The middleware uses the
 ## Project structure
 
 ```
-initi-aws-deploy/
+init-aws-deploy/
   client/        # Next.js app (App Router)
   server/        # Express API + Prisma + Postgres
 ```
