@@ -1,0 +1,32 @@
+name: server
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: postgres-16
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydatabase
+    volumes:
+      - ./postgres-init:/docker-entrypoint-initdb.d:ro
+#   express-api:
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     container_name: express-api
+#     restart: always
+#     ports:
+#       - "3000:3000" # expose express on port 3000
+#       - "5555:5555" # expose prisma studio on port 5555
+#     depends_on:
+#       - postgres
+#     environment:
+#       - DATABASE_URL=postgresql://myuser:mypassword@postgres:5432/mydatabase
+#     volumes:
+#       - ./:/app # Mounts the ptoject directory(./server) to the container
+#       - node_modules:/app/node_modules # Mounts the node_modules directory to the container
+# volumes:
+#   node_modules:

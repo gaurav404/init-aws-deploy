@@ -1,0 +1,55 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Node modules
+**/node_modules/
+
+# Env files (keep examples tracked)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!*.example
+
+# Client env
+client/.env
+client/.env.local
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+client/.next
+
+# Server env
+server/.env
+server/.env.local
+server/.env.development.local
+server/.env.test.local
+server/.env.production.local
+
+# Next.js (client)
+client/.next/
+client/out/
+client/.vercel/
+client/.turbo/
+
+# Build outputs
+server/dist/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Prisma internal (within node_modules, but here for clarity)
+server/node_modules/.prisma/
+
+
